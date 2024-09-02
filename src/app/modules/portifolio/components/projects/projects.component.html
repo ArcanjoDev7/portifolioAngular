@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Projetos desenvolvidos</h2>
+    <ul>
+        @for (item of arrayProjects(); track $index) {
+        <li>
+            <button (click)="openDialog(item)">
+                <img 
+                [src]="item.src"
+                 [alt]="item.alt"
+                  loading="lazy" 
+                  [attr.height]="" 
+                  [attr.width]="" />
+            </button>
+        </li>
+        }
+    </ul>
+</div>
